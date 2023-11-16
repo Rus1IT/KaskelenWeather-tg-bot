@@ -24,10 +24,6 @@ public class Parser {
         Document page = Jsoup.parse(new URL(url),5000);
         return page;
     }
-    // Остальной код остается без изменений
-}
-
-    }
     public static String[] ZakatRassvetInfo(){
         String info = page.select("div[class=weather-line-mini__info]").text();
         String[] infoMassiv =info.split(" ");
