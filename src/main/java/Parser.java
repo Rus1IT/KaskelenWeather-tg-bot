@@ -20,8 +20,8 @@ public class Parser {
     }
 
     public static Document getPage() throws IOException{
-        String url = System.getenv("PARSE_URL");
-        Document page = Jsoup.parse(new URL(url),10000);
+        String url = "https://www.kaskelenec.kz/weather";
+        Document page = Jsoup.parse(new URL(url),5000);
         return page;
     }
     public static String[] ZakatRassvetInfo(){
